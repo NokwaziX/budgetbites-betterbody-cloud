@@ -3,7 +3,7 @@ async function generateMeals() {
     const goalWeight = document.getElementById("goalWeight").value;
     const pantry = document.getElementById("pantry").value;
 
-    const response = await fetch("YOUR_API_GATEWAY_URL", {
+    const response = await fetch("https://pyffah5jvd.execute-api.af-south-1.amazonaws.com/default/budgetbites-backend", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
